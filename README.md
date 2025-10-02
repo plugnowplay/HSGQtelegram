@@ -13,6 +13,7 @@ Dibuat dengan Node.js
 - ✅ Melakukan reboot ONU dengan konfirmasi
 - ✅ Mengubah nama ONU dengan konfirmasi
 - ✅ Menampilkan semua ONU terdaftar
+- ✅ Menampilkan ONU dengan redaman sinyal buruk
 - ✅ Autentikasi pengguna untuk keamanan
 - ✅ Mendukung pencarian dengan Serial Number, MAC Address, atau nama ONU
 - ✅ Logging lengkap untuk keperluan debugging
@@ -21,12 +22,12 @@ Dibuat dengan Node.js
 
 Unduh atau Clone dengan `download as zip` atau `git clone`:
 ```console
-$ git clone plugnowplay/HSGQtelegram
+$ git clone https://github.com/malygos-HSGQtelegrambot/bot-HSGQ.git
 ```
 
-Masuk ke direktori `HSGQtelegram`:
+Masuk ke direktori `bot-HSGQ`:
 ```console
-$ cd bHSGQtelegram
+$ cd bot-HSGQ
 ```
 
 Lakukan perintah npm install, *harus terinstall node.js*:
@@ -171,7 +172,14 @@ Perintah untuk menampilkan semua ONU:
 /showall
 ```
 
-**Catatan**: Perintah ini akan mengirimkan daftar ONU satu per satu secara terpisah dengan format: [Status Emoji] [SN/MAC] [Nama ONU].
+**Catatan**: Perintah ini akan mengirimkan daftar ONU satu per satu secara terpisah dengan format: `[Status Emoji] [SN/MAC] [Nama ONU]`.
+
+Perintah untuk menampilkan ONU dengan redaman sinyal buruk:
+```console
+/cek
+```
+
+**Catatan**: Perintah ini akan menampilkan daftar ONU yang memiliki redaman sinyal di bawah -25 dBm, diurutkan dari yang terburuk.
 
 Perintah untuk menghapus akses pengguna dari bot:
 ```console
@@ -187,15 +195,16 @@ Bot menampilkan status ONU dengan emoji berikut:
 - ✅ : ONU online/aktif
 - ❌ : ONU offline/nonaktif
 - ⚠️ : ONU dalam status warning
+- 📉 : ONU dengan redaman sinyal buruk (di bawah -25 dBm)
 
 ## Untuk Docker / Kontainer
 
 Unduh atau Clone dengan `download as zip` atau `git clone`:
 ```console
-$ git clone plugnowplay/HSGQtelegram
+$ git clone https://github.com/malygos-HSGQtelegrambot/bot-HSGQ.git
 ```
 
-Masuk ke direktori `HSGQtelegram`:
+Masuk ke direktori `bot-HSGQ`:
 ```console
 $ cd HSGQtelegram
 ```
