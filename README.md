@@ -22,12 +22,12 @@ Dibuat dengan Node.js
 
 Unduh atau Clone dengan `download as zip` atau `git clone`:
 ```console
-$ git clone https://github.com/malygos-HSGQtelegrambot/bot-HSGQ.git
+$ git clone https://github.com/plugnowplay/HSGQtelegram.git
 ```
 
-Masuk ke direktori `bot-HSGQ`:
+Masuk ke direktori `HSGQtelegram`:
 ```console
-$ cd bot-HSGQ
+$ cd HSGQtelegram
 ```
 
 Lakukan perintah npm install, *harus terinstall node.js*:
@@ -201,7 +201,7 @@ Bot menampilkan status ONU dengan emoji berikut:
 
 Unduh atau Clone dengan `download as zip` atau `git clone`:
 ```console
-$ git clone https://github.com/malygos-HSGQtelegrambot/bot-HSGQ.git
+$ git clone https://github.com/plugnowplay/HSGQtelegram.git
 ```
 
 Masuk ke direktori `bot-HSGQ`:
